@@ -13,6 +13,7 @@ CLIENT_OUT=$($CLIENT)
 
 if [[ $CLIENT_OUT != "pong" ]]; then
   echo "Client should respond with 'pong', got: " $CLIENT_OUT
+  exit 1
 else
   echo "Success!"
 fi
